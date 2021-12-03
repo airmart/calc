@@ -62,7 +62,7 @@ if (isset($_POST['first_number']) && isset($_POST['operation']) && isset($_POST[
         <div class="form-group mx-sm-3 mb-2">
             <button type="submit" class="btn btn-primary mb-2">=</button>
         </div>
-        <?php if ($solution) { ?>
+        <?php if (!is_null($solution)) { ?>
             <div class="form-group mx-sm-3 mb-2">
                 <input type="text" value="<?= $solution ?>">
             </div>
